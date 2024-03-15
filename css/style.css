@@ -1,0 +1,94 @@
+.wrapper-main {
+    border: dotted blue 2px;
+}
+
+body{
+    /* Serebii.net bgc */
+    background-color: #383838;
+}
+.header-banner{
+    /* Serebii.net hero bgc */
+    background-color: #507c36;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.banner-sprite{
+    width: 100px;
+    /* padding-bottom: -15px; */
+}
+
+.header-banner h3{
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+nav a {
+    margin-top: px;
+    text-decoration: none;
+    color: rgb(0, 0, 165);
+
+    line-height: 1.5;
+}
+nav a:visited {
+    color: rgb(0, 0, 165);
+}
+nav a:hover {
+    color: greenyellow;
+}
+#search-box {
+    width: 100px;
+}
+
+.wrapper-main {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (min-width: 800px) {
+    .header-banner{
+    
+        max-width: 1000px;
+    }
+
+    nav ul {
+        /* justify-content: center; */
+        flex-direction: row;
+
+    }
+
+    .wrapper-main {
+        max-width: 800px;
+    }
+}

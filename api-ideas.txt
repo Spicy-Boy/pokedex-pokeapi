@@ -1,0 +1,8 @@
+//minecraft users
+https://api.mojang.com/users/profiles/minecraft/epicaaron29
+
+//btw community github addons list
+https://api.github.com/repos/BTW-Community/SMP-Commands-CE
+
+//github api doc
+https://docs.github.com/en/rest?apiVersion=2022-11-28
