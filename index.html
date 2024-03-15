@@ -19,22 +19,35 @@
         </div>
         <nav>
             <ul>
+                
                 <li>
                     <a href="index.html">HOME</a>
                 </li>
+
                 <li>
                     <span>Search:</span>
                     <input type="search" id="search-box">
                 </li>
+
             </ul>
         </nav>
     </header>
     <main>
 
         <div class="wrapper-main">
-            <section id="dropdown-menus">
-                DROPDOWN MENUS HERE
+
+            <section class="dropdown-menus">
+
+                <!-- <form id="kanto-form" action="entry.html" method="GET"> -->
+                    <!-- <label for="dropdown"></label> -->
+                    <select id="kanto-dropdown" name="pokemon">
+                        <option value="-1" selected>Kanto: 01-151</option>
+                        <option value="1">001 Bulbasaur</option>
+                    </select>
+                <!-- </form> -->
+
             </section>
+
             <section id="icon-menu">
                 
             </section>
@@ -43,9 +56,13 @@
     </main>
 
     <script>
+        window.addEventListener('load', () => {
+            document.getElementById("kanto-dropdown").selectedIndex = 0;
+        });
 
     </script>
 
+    <script src="js/populate-dropdown-menus.js"></script>
     <script src="js/populate-icon-menu.js"></script>
     
 </body>

@@ -70,10 +70,21 @@ nav a:hover {
     margin-right: auto;
 }
 
+.dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .icon-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+.icon:hover img{
+    /* width: 50px; */
+    background-color: white;
 }
 
 @media (min-width: 800px) {
