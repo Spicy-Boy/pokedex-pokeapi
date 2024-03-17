@@ -7,13 +7,21 @@ let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/
 for (let i = 1; i < 152; i++) //shows 151 pokemon
 {
     let link = document.createElement("a");
-    link.href = "https://www.serebii.net";
+
+    let currentUrl = window.location.href;
+
+    //directly modifies url to replace index.html with entry.html targeting index of pokemon
+    console.log("intitial url",currentUrl);
+    // currentUrl.replace("index.html",`entry.html?pokemon=${i}`);
+    link.href = currentUrl.replace("index.html",`entry.html?pokemon=${i}`);
+    console.log("2nd url",currentUrl);
+
     link.classList.add("icon");
 
     let img = new Image();
     img.src = baseUrl+i+".png";
     link.appendChild(img);
-    
+
     iconMenu.appendChild(link);
 }
 
