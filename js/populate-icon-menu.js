@@ -10,15 +10,14 @@ for (let i = 1; i < 152; i++) //shows 151 pokemon
 
     let currentUrl = window.location.href;
 
-    //directly modifies url to replace index.html with entry.html targeting index of pokemon
-    console.log("intitial url",currentUrl);
+    // console.log("intitial url",currentUrl);
+    //links to an entry.html with pokemon index as url parameter
     link.href=`entry.html?pokemon=${i}`;
-    console.log("2nd url",currentUrl);
 
     link.classList.add("icon");
 
     let img = new Image();
-    img.src = baseUrl+i+".png";
+    img.src = baseUrl+i+".png"; //links to a github repo with all the pokemon icon sprites listed by index
     link.appendChild(img);
 
     iconMenu.appendChild(link);

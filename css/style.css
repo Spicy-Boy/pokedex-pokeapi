@@ -28,7 +28,7 @@ body{
 
 .header-banner h3{
     text-align: center;
-    padding-bottom: 0;
+    padding-bottom: 5px;
     margin-bottom: 0;
 }
 
@@ -45,7 +45,7 @@ nav ul {
 nav li {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 nav a {
     margin-top: px;
@@ -87,9 +87,15 @@ nav a:hover {
     background-color: white;
 }
 
+/* # $ # $ pokedex entry STYLE # $ # $ */
+#sprite {
+    padding-top: 20px; 
+    /* NOTE for later, use calc() to make every sprite fit a perfect square */
+}
+
 @media (min-width: 800px) {
     .header-banner{
-    
+        padding-bottom: 0;
         max-width: 1000px;
     }
 
@@ -97,6 +103,11 @@ nav a:hover {
         /* justify-content: center; */
         flex-direction: row;
 
+    }
+    nav li {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
     }
 
     .wrapper-main {
