@@ -4,7 +4,7 @@ const iconMenu = document.getElementById("icon-menu");
 //icon url
 let baseUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/"; //132.png would be ditto
 
-for (let i = 1; i < 152; i++) //shows 151 pokemon
+for (let i = 1; i < 494; i++) //shows 151 pokemon
 {
     let link = document.createElement("a");
 
