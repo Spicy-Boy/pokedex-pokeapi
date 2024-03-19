@@ -36,43 +36,40 @@
 
     <main>
 
-        <div class="wrapper-main">
+        <section class="dropdown-menus">
 
-            <section class="dropdown-menus">
+            <!-- <form id="kanto-form" action="entry.html" method="GET"> -->
+                <!-- <label for="dropdown"></label> -->
+            <!-- </form> -->
 
-                <!-- <form id="kanto-form" action="entry.html" method="GET"> -->
-                    <!-- <label for="dropdown"></label> -->
-                <!-- </form> -->
+            <select id="kanto-dropdown" name="pokemon">
+                <option value="-1" selected>Kanto: 01-151</option>
+            </select>
+            <select id="johto-dropdown" name="pokemon">
+                <option value="-1" selected>Johto: 152-251</option>
+            </select>
+            <select id="hoenn-dropdown" name="pokemon">
+                <option value="-1" selected>Hoenn: 252-386</option>
+            </select>
+            <select id="sinnoh-dropdown" name="pokemon">
+                <option value="-1" selected>Sinnoh: 01-493</option>
+            </select>
 
-                <select id="kanto-dropdown" name="pokemon">
-                    <option value="-1" selected>Kanto: 01-151</option>
-                </select>
-                <select id="johto-dropdown" name="pokemon">
-                    <option value="-1" selected>Johto: 152-251</option>
-                </select>
-                <select id="hoenn-dropdown" name="pokemon">
-                    <option value="-1" selected>Hoenn: 252-386</option>
-                </select>
-                <select id="sinnoh-dropdown" name="pokemon">
-                    <option value="-1" selected>Sinnoh: 01-493</option>
-                </select>
-
-            </section>
-            
-            <section id="icon-menu">
-
-            </section>
-        </div>
+        </section>
+        
+        <section id="icon-menu">
+            <!-- populated dynamically with populate-icon-menu.js -->
+        </section>
 
     </main>
 
     <script>
 
-        window.addEventListener('load', () => {
+        // window.addEventListener('load', () => {
 
-            document.getElementById("kanto-dropdown").selectedIndex = 0;
+        //     document.getElementById("kanto-dropdown").selectedIndex = 0;
 
-        });
+        // });
 
     </script>
 

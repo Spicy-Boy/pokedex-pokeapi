@@ -64,16 +64,25 @@ nav a:hover {
     width: 100px;
 }
 
-.wrapper-main {
+main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.dropdown-menu {
+.dropdown-menus {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    flex-wrap: wrap;
+}
+.dropdown-menus select{
+    width: 120px;
+    margin-top: 5px;
 }
 
 .icon-menu {

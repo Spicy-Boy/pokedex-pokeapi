@@ -5,9 +5,9 @@ let sinnohDropdown = document.getElementById("sinnoh-dropdown");
 
 /* <option value="1">001 Bulbasaur</option> */
 
-// FETCH a list of pokemon from kanto (1 - 151)!
-const url = "https://pokeapi.co/api/v2/pokemon/?limit=493"; //493 pokemon in gen 4
-fetch(url)
+// FETCH a list of pokemon from first four regions (0-493)!
+const pokemonListUrl = "https://pokeapi.co/api/v2/pokemon/?limit=493"; //493 pokemon in gen 4
+fetch(pokemonListUrl)
 .then(json => json.json() )
 .then( obj => {
     for (let i = 0; i < obj.results.length; i++)

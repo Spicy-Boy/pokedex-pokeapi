@@ -28,12 +28,40 @@
     </header>
 
     <main>
+
+        <section class="dropdown-menus">
+
+            <!-- <form id="kanto-form" action="entry.html" method="GET"> -->
+                <!-- <label for="dropdown"></label> -->
+            <!-- </form> -->
+
+            <select id="kanto-dropdown" name="pokemon">
+                <option value="-1" selected>Kanto: 01-151</option>
+            </select>
+            <select id="johto-dropdown" name="pokemon">
+                <option value="-1" selected>Johto: 152-251</option>
+            </select>
+            <select id="hoenn-dropdown" name="pokemon">
+                <option value="-1" selected>Hoenn: 252-386</option>
+            </select>
+            <select id="sinnoh-dropdown" name="pokemon">
+                <option value="-1" selected>Sinnoh: 01-493</option>
+            </select>
+
+        </section>
+
+        <section class="entry-header">
+            <img src="" id="icon-sprite">
+            <span id=""></span>
+        </section>
+
         <img src="" id="sprite">
         <h3 id="name">Name</h3>
         <p id="type">Type</p>
     </main>
 
     <script src="js/utility-functions.js"></script>
+    <script src="js/populate-dropdown-menus.js"></script>
     <script src="js/populate-entry.js"></script>
     
 </body>
