@@ -75,10 +75,16 @@ main {
     flex-direction: row;
     justify-content: space-around;
 
+    margin: 0 auto 0 auto;
+
     padding-bottom: 15px;
     padding-top: 15px;
 
     flex-wrap: wrap;
+
+    max-width: 600px;
+    
+
 }
 .dropdown-menus select{
     width: 120px;
@@ -100,6 +106,22 @@ main {
 #sprite {
     padding-top: 20px; 
     /* NOTE for later, use calc() to make every sprite fit a perfect square */
+    width: 71px;
+}
+.entry-wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    display: grid;
+    grid-template:
+    "entry-header entry-header entry-header"
+    "entry-animated entry-lore entry-lore"
+    "entry-animated entry-lore entry-lore"
+    "";
+}
+.entry-wrapper h3 {
+
 }
 
 @media (min-width: 800px) {
@@ -119,7 +141,13 @@ main {
         padding-bottom: 15px;
     }
 
-    .wrapper-main {
-        max-width: 800px;
+    main {
+        max-width: 1000px;
+    }
+
+    /* # $ # $ pokedex entry STYLE # $ # $ */
+    .entry-wrapper {
+        align-items: normal;
+        justify-content: normal;
     }
 }

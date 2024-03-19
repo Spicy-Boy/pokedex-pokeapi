@@ -24,9 +24,9 @@ fetch(url+pokemonID)
 
     //types arrive as an array of objects
     let types = obj.types;
-    console.log(types);
+    // console.log(types);
     types.forEach( (e,i) => {
-        console.log(e);
+        // console.log(e);
         if (i == 0)
         {
             type.textContent = "Type: "+capitalizeFirstLetter(e.type.name);
