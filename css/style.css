@@ -102,7 +102,7 @@ main {
     background-color: white;
 }
 
-/* # $ # $ pokedex entry STYLE # $ # $ */
+/* # $ # $ # pokedex entry STYLE # $ # $ # */
 #sprite {
     padding-top: 20px; 
     /* NOTE for later, use calc() to make every sprite fit a perfect square */
@@ -118,8 +118,38 @@ main {
     "entry-header entry-header entry-header"
     "entry-animated entry-lore entry-lore"
     "entry-animated entry-lore entry-lore"
-    "";
+    "entry-location entry-location entry-location"
+    "entry-moves entry-moves entry-moves";
+    gap: 15px;
 }
+.entry-header {
+    grid-area: entry-header;
+    display: flex;
+    align-items: center;
+}
+#icon-sprite {
+    padding-bottom: 5px;
+}
+.entry-animated {
+    grid-area: entry-animated;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.entry-lore {
+    grid-area: entry-lore;
+}
+.entry-location {
+
+}
+.entry-moves {
+
+}
+
+.background-grid {
+    background-color: lightgrey;
+}
+
 .entry-wrapper h3 {
 
 }
