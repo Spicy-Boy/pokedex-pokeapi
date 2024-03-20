@@ -8,7 +8,7 @@ const iconSprite = document.getElementById('icon-sprite');
 const pokeIndex = document.getElementById('poke-index');
 
 const sprite = document.getElementById('sprite');
-const name1 = document.getElementById('name1');
+// const name1 = document.getElementById('name1');
 const name2 = document.getElementById('name2');
 const classification = document.getElementById('classification');
 const type = document.getElementById('type');
@@ -25,13 +25,12 @@ fetch(url+pokemonID)
 
     //inside entry-header 
     iconSprite.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/"+pokemonID+".png";
-    pokeIndex.textContent = "#"+pokemonID+"  ";
+    pokeIndex.textContent = "#"+pokemonID+"  "+capitalizeFirstLetter(obj.name);
 
     //inside entry-animated
     //fetched img, name, and type
     let spriteUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/"+pokemonID+".gif"; //animated implied
     sprite.src = spriteUrl;
-    name1.textContent = capitalizeFirstLetter(obj.name);
     name2.textContent = capitalizeFirstLetter(obj.name);
 
     //types arrive as an array of objects
