@@ -136,11 +136,41 @@ main {
     align-items: center;
     flex-direction: column;
 }
+
 .entry-lore {
     grid-area: entry-lore;
-}
-.entry-location {
 
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+.lore-individual {
+    flex-basis: 100%;
+
+    display: grid;
+    grid-template:
+    "a b b b";
+    gap: 1px;
+
+    /* display: flex;
+    flex-direction: row; */
+}
+.lore-version {
+    /* flex-basis: 10%; */
+    width: 9%;
+    grid-area: a;
+}  
+.lore-flavor {
+    /* flex-basis: 89%; */
+    width: 89%;
+    grid-area: b;
+}
+
+.entry-location {
+    
 }
 .entry-moves {
 
