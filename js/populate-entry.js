@@ -1,4 +1,4 @@
-let url = "https://pokeapi.co/api/v2/pokemon/"; //game data
+let url = "https://pokeapi.co/api/v2/pokemon/"; //game data api url
 
 const searchParams = new URLSearchParams(window.location.search);
 let pokemonID = searchParams.get("pokemon");
@@ -51,6 +51,7 @@ fetch(url+pokemonID)
     });
 });
 
+//second api call, the pokemon-species
 url = "https://pokeapi.co/api/v2/pokemon-species/"
 
 fetch(url+pokemonID)
@@ -86,7 +87,11 @@ fetch(url+pokemonID)
             entryDiv.appendChild(versionDiv);
 
             let flavorDiv = document.createElement('div');
-            flavorDiv.innerText = entry.flavor_text;
+            let pFlavor = document.createElement('p');
+            pFlavor.innerText = entry.flavor_text;
+            flavorDiv.appendChild(pFlavor);
+            flavorDiv.classList.add("loreFlavor");
+
             entryDiv.appendChild(flavorDiv);
 
             if (entry.flavor_text != previousEntryFlavor)

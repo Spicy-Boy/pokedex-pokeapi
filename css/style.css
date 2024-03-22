@@ -150,23 +150,28 @@ main {
 .lore-individual {
     flex-basis: 100%;
 
-    display: grid;
-    grid-template:
-    "a b b b";
+    /* display: grid; */
+    /* grid-template:
+    "a b b b"; */
     gap: 1px;
 
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
+    flex-direction: row;
 }
 .lore-version {
-    /* flex-basis: 10%; */
-    width: 9%;
+    /* text-align: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 20%;
     grid-area: a;
 }  
 .lore-flavor {
-    /* flex-basis: 89%; */
-    width: 89%;
+    flex-basis: 80%;
     grid-area: b;
+
 }
 
 .entry-location {
