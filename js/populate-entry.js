@@ -78,6 +78,7 @@ fetch(url+pokemonID)
         entry.version.name == "platinum"
         ){
 
+            
             let entryDiv = document.createElement('div');
             entryDiv.classList.add('lore-individual');
 
@@ -88,6 +89,9 @@ fetch(url+pokemonID)
 
             let flavorDiv = document.createElement('div');
             let pFlavor = document.createElement('p');
+            //regex to remove line breaks vvv
+            entry.flavor_text = entry.flavor_text.replace(/\n/g, ' ');
+
             pFlavor.innerText = entry.flavor_text;
             flavorDiv.appendChild(pFlavor);
             flavorDiv.classList.add("loreFlavor");
