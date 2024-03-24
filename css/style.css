@@ -155,7 +155,7 @@ main {
     display: grid;
     grid-template:
     "a b";
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 10% 90%;
     gap: 1px;
 
     /* display: flex; */

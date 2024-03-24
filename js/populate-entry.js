@@ -77,14 +77,22 @@ fetch(url+pokemonID)
         entry.version.name == "pearl" ||
         entry.version.name == "platinum"
         ){
-
             
             let entryDiv = document.createElement('div');
             entryDiv.classList.add('lore-individual');
 
             let versionDiv = document.createElement('div');
             versionDiv.classList.add("lore-version");
-            versionDiv.innerText = entry.version.name;
+
+            console.log(entry.version.name);
+            let versionName = entry.version.name;
+            console.log(versionName);
+
+            versionName = versionName.replace(/\bred\b/g, "fffRed");
+            versionName = versionName.replace(/\bgreen\b/g, "Green");
+            console.log(versionName);
+
+            versionDiv.innerText = capitalizeFirstLetter(entry.version.name);
             entryDiv.appendChild(versionDiv);
 
             let flavorDiv = document.createElement('div');
